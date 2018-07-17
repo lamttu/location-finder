@@ -12,13 +12,23 @@
 </head>
 <body>
     <section class="hero hero-body is-dark container">
-        <h1 class="title">Australia Location Information</h1>
-        <h2 class="subtitle">Enter a zipcode to get the location's information</h2>
+        <h1 class="title">Location Information</h1>
+        <h2 class="subtitle">Enter a zipcode to get the location's information 
+        <br> (currently supporting Australia, New Zealand, Japan, The United States, and Canada)</h2>
         <form id="zip-form">
             <div class="field">
+                <div class="select">
+                    <select>
+                        <option value="au" selected>Australia</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="jp">Japan</option>
+                        <option value="us">The United States</option>
+                        <option value="ca">Canada</option>
+                    </select>
+                </div>                          
                 <label class="label">Zipcode</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input is-large" type="text" placeholder="Enter zipcode" required>
+                  <input class="input is-medium" type="text" placeholder="Enter zipcode" required>
                   <span class="icon is-small is-left">
                     <i class="fa fa-map-pin"></i>
                   </span>
@@ -29,7 +39,7 @@
                     <i class="fa fa-remove"></i>
                   </span>
                 </div>
-              </div>
+            </div>
         </form>
     </section>
     <div class="container">

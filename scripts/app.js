@@ -9,8 +9,11 @@ function getLocationInfo(event){
     event.preventDefault();
     // Get the zipcode 
     let zipCode = document.querySelector("input[type=text]").value;
+    let select = document.querySelector("select");
+    let country = select.options[select.selectedIndex].value;
+    
     // Fetch information from API
-    fetch(`https://api.zippopotam.us/au/${zipCode}`)
+    fetch(`https://api.zippopotam.us/${country}/${zipCode}`)
     .then(response => {
         if(!response.ok){   // User enter invalid zipcode
             throw new Error("This zipcode is invalid");
@@ -83,7 +86,6 @@ function deleteLocationInfo(event){
         document.querySelector("input[type=text]").value = "";
         document.querySelector(".icon-check").style.display = "none";
         document.querySelector("input[type=text]").classList.remove("is-success");
-        document.querySelector("input[type=text]").focus();
     }
 }
 
