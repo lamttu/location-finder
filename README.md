@@ -9,6 +9,6 @@ Live site (http://lamttu.github.io/location-finder)
 ![example](https://i.imgur.com/8AIafhv.png)
 
 ## Resources
-- [Bulma] (https://bulma.io/)
-- [Zippopotamus API] (https://http://www.zippopotam.us/)
+- [Bulma](https://bulma.io/)
+- [Zippopotamus API](https://http://www.zippopotam.us/)
 
