@@ -46,6 +46,7 @@ function getLocationInfo(event){
     .catch((error) =>{
         showIcon("remove");
         changeInputStyle("danger");
+        console.log(error);
         document.querySelector("#output").innerHTML = 
         `
         <article class="message is-danger">
