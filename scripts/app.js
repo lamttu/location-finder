@@ -10,7 +10,7 @@ function getLocationInfo(event){
     // Get the zipcode 
     let zipCode = document.querySelector("input[type=text]").value;
     // Fetch information from API
-    fetch(`http://api.zippopotam.us/au/${zipCode}`)
+    fetch(`https://api.zippopotam.us/au/${zipCode}`)
     .then(response => {
         if(!response.ok){   // User enter invalid zipcode
             throw new Error("This zipcode is invalid");
