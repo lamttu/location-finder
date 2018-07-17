@@ -78,7 +78,7 @@ function deleteLocationInfo(event){
         fadeOutAndRemove(event.target.parentNode.parentNode);
         counter--;
     }
-    if(counter == 0){
+    if(counter == 0){  //once user has closed all results, clear the input field and other styles
         document.querySelector("input[type=text]").value = "";
         document.querySelector(".icon-check").style.display = "none";
         document.querySelector("input[type=text]").classList.remove("is-success");
